@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Le jeu du Pendu</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Pendu.css" type="text/css" rel="stylesheet"/>
+    <!-- scripts en bas de page  -->
+</head>
+
+<body>
+<!--<div id="btnaide">-->
+<!--    <button type="button" onclick="clicOuvrirAide()">-->
+<!--        Mode d'emploi-->
+<!--    </button>-->
+<!--</div>-->
+<h1>Le jeu du Pendu</h1>
+<div class="pendu">
+    <img src="img/corde0.gif" alt="corde"/>
+    <img id="pendu" src="img/p0.gif" alt="pendu" width="436" height="368"/>
+    <img src="img/corde0.gif" alt="corde"/>
+</div>
+
+<div class="jeu">
+    <span id="jeu">Pendu</span>
+</div>
+
+<div id="alpha">
+    <button type="button" class="alpha" onclick="clicLettre(this, 'A')">
+        A
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'B')">
+        B
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'C')">
+        C
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'D')">
+        D
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'E')">
+        E
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'F')">
+        F
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'G')">
+        G
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'H')">
+        H
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'I')">
+        I
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'J')">
+        J
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'K')">
+        K
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'L')">
+        L
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'M')">
+        M
+    </button>
+    <br/>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'N')">
+        N
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'O')">
+        O
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'P')">
+        P
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'Q')">
+        Q
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'R')">
+        R
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'S')">
+        S
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'T')">
+        T
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'U')">
+        U
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'V')">
+        V
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'W')">
+        W
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'X')">
+        X
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'Y')">
+        Y
+    </button>
+    <button type="button" class="alpha" onclick="clicLettre(this, 'Z')">
+        Z
+    </button>
+</div>
+
+<div id="console">
+    •
+</div>
+
+<!--<div id="alpha1">-->
+<!--</div>-->
+
+<!--<div id="controle">-->
+<!--    <button type="button" onclick="clicNouvellePartie()">-->
+<!--        Choisir un Mot Nouveau-->
+<!--    </button>-->
+<!--</div>-->
+
+<div class="debug">
+    <div style="width: 10px; height: 10px;" onclick="clicDebug()">
+    </div>
+</div>
+<div id="popup">
+</div>
+<div id="aide" class="invisible">
+    <fieldset onclick="clicFermerAide()">
+        <legend>
+            Mode d'emploi
+        </legend>
+        <h3 style="color: blue;">Pour deviner le mot inconnu . . .</h3>
+        <p>
+            . . . Clic sur les lettres !
+        </p>
+        <h4 style="color: red;"> &nbsp; &nbsp; Vous serez Pendu à la 6<sup>ième</sup> erreur &nbsp; &nbsp;</h4>
+    </fieldset>
+</div>
+<div class="w3c">
+    <a href="http://validator.w3.org/check?uri=referer" style="text-decoration: none"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/W3C_valid.svg/1280px-W3C_valid.svg.png"
+            alt="Validation W3C"
+            style="border: 1px darkgray solid; height: 40px; margin: 10px; padding: 3px;"/>
+    </a>
+</div>
+
+<script src="Dico.js" type="text/javascript" charset="utf-8"></script>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+
